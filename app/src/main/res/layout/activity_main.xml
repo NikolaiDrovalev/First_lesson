@@ -3,23 +3,64 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/text_View"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/user_card"
-        android:layout_gravity="center">
-    </TextView>
+        android:text="@string/newProject"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:inputType="textPersonName">
-    </EditText>
+        android:fontFamily="casual"
+        android:hint="@string/stars"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btn_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:backgroundTint="@color/red1"
+        android:text="@string/redButton"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/oneSwitch"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/vote"
+        android:textSize="50sp"/>
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:textColor="@color/cardview_light_background"
+        tools:ignore="TextContrastCheck" />
+
+
 </LinearLayout>
